@@ -1,0 +1,3 @@
+# Force GitHub Linguist to count the Python study files in statistics (not exclude them as documentation)
+Python/*.py linguist-detectable=true
+Python/*.py linguist-documentation=false
