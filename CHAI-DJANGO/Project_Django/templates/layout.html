@@ -1,0 +1,49 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> {% block title %}Default Value{% endblock %}
+    </title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    
+</head>
+
+
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <h2>Aditya</h2>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Projects</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+ 
+  
+
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Hi, I'm <span>Aditya</span></h1>
+      <p>
+        A passionate Web Developer & AI Enthusiast building modern and impactful digital experiences.
+      </p>
+      <button class="btn">View My Work</button>
+    </div>
+
+    <img src="https://media.licdn.com/dms/image/v2/D5603AQFzW4w6zJCXmw/profile-displayphoto-scale_400_400/B56Z1Ic3KPKYAg-/0/1775037022207?e=1777507200&v=beta&t=i0pNxO0c4YbNqXq1MTL2JQahdCreiVaOZKPaEJ79cmA" alt="Profile">
+  </section>
+
+  {% block Content %}{% endblock %} 
+
+
+</body>
+</html>
+
+</html>
